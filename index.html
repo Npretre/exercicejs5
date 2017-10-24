@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form name="form1">
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" name ="valider" onClick="controle(form1)">Valider</button>
+        </form>
+
+        <script>
+            function controle(form1){
+                var firstnumber = document.form1.premier_nombre.value;
+                var secondnumber = document.form1.deuxieme_nombre.value;
+                var arrondi = Math.trunc(firstnumber);
+
+                alert('Le résultat est de ' + arrondi * secondnumber);
+            }
+        </script>
+    </body>
+</html>
